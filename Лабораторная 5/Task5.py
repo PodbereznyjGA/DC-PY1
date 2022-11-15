@@ -2,9 +2,8 @@ import random
 import string
 from random import sample
 
-def get_random_password() -> str:
-    password = ""
-    length_ = 8
+def get_random_password(length_ = 8) -> str:
+
     words_ = string.ascii_letters + string.digits
     pass_ = "".join(sample(words_, length_))
     return pass_
